@@ -247,11 +247,15 @@
     <section class="book" id="book">
         <h1 class="heading">booking <span>reserve a table</span></h1>
 
-        <form action="">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="8afb514a-213d-4591-8646-9572ddfbb5fa" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <input type="text" name="name" id="name" placeholder="Name" class="box">
+            <input type="email" name="email" id="email" placeholder="you@company.com" class="box">
+            <input type="number" type="text" name="phone" id="phone" placeholder="+91 99999-99999" class="box">
+            <textarea  rows="5" name="message" id="message" placeholder="Your Message" class="box" id="" cols="30" rows="10"></textarea>
             <input type="submit" value="send message" class="btn">
         </form>
     </section>
